@@ -51,7 +51,7 @@ func PostHandler(w http.ResponseWriter, r *http.Request) {
 		// response header
 		w.WriteHeader(http.StatusOK)
 		currency := model.Currency{
-			Type : "GHS",
+			Type : "KSH",
 			Amount : amount,
 		}
 		// give response to client
@@ -71,7 +71,7 @@ func PostHandler(w http.ResponseWriter, r *http.Request) {
 		// response header
 		w.WriteHeader(http.StatusOK)
 		currency := model.Currency{
-			Type : "GHS",
+			Type : "NGN",
 			Amount : amount,
 		}
 		// give response to client
