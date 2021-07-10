@@ -8,6 +8,9 @@ A currency converter web service converting 3-currencies:
 ### Requirements:
 * Golang
 
+
+To run the code locally:
+
  ```
  $ git clone https://github.com/edwinnduti/currency-changer.git
  $ cd currency-changer
@@ -17,7 +20,7 @@ A currency converter web service converting 3-currencies:
  ```
 
 
-Run Tests:
+To run the Tests:
 ```
  $ go test -v
 ```
@@ -25,7 +28,8 @@ Run Tests:
 
 Available :
 
-| function              |   path                    |   method  |
-|   ----                |   ----                    |   ----    |                                           | PostHandler           |   /                        |       POST    |
+| function              |   path              |   method  |
+|   ----  |   ---- |   ----  |
+| PostHandler           |   /              |       POST    |
 
 made with 💖 in Kenya.
