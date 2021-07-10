@@ -9,7 +9,7 @@ import(
 // register routers
 func Router() *mux.Router {
 	router := mux.NewRouter().StrictSlash(false)
-	router.HandleFunc("/",lib.PostHandler).Queries("to", "{TO}", "amount", "{AMOUNT}", "from", "{FROM}").Methods("POST","OPTIONS")
+	router.HandleFunc("/",lib.PostHandler).Methods("POST","OPTIONS")
 
 	return router
 }

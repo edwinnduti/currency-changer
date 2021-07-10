@@ -16,9 +16,16 @@ A currency converter web service converting 3-currencies:
  $ ./main
  ```
 
+
+Run Tests:
+```
+ $ go test -v
+```
+
+
 Available :
 
 | function              |   path                    |   method  |
 |   ----                |   ----                    |   ----    |                                           | PostHandler           |   /                        |       POST    |
 
-made with 💖
+made with 💖 in Kenya.

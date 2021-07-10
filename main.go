@@ -9,7 +9,6 @@ import (
 	"github.com/edwinnduti/currency-changer/middleware"
 	"github.com/edwinnduti/currency-changer/router"
 	"github.com/gorilla/handlers"
-	//"github.com/urfave/negroni"
 )
 
 // Main function
@@ -28,15 +27,15 @@ func main() {
 	originsOk := handlers.AllowedOrigins([]string{"*"})
 	methodsOk := handlers.AllowedMethods([]string{"POST", "OPTIONS"})
 
-	// establish negroni for logging
-	//n := negroni.Classic()
-	//n.UseHandler(r)
+	// establish a logging mechanism
 	logger := log.New(os.Stdout, "http: ", log.LstdFlags)
+	// define server
 	server := &http.Server{
 		Handler: handlers.CORS(originsOk, methodsOk)(middleware.Logging(logger)(r)),
 		Addr:    ":" + Port,
 	}
 
+	// print and run server
 	log.Printf("Listening on PORT: %s", Port)
 	server.ListenAndServe()
 }
