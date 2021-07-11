@@ -15,7 +15,7 @@ To run the code locally:
  $ git clone https://github.com/edwinnduti/currency-changer.git
  $ cd currency-changer
  $ go mod download
- $ go build .
+ $ go build main.go
  $ ./main
  ```
 
