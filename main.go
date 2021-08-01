@@ -3,9 +3,10 @@ package main
 
 // libraries to use
 import (
-	"os"
 	"log"
 	"net/http"
+	"os"
+
 	"github.com/edwinnduti/currency-changer/middleware"
 	"github.com/edwinnduti/currency-changer/router"
 	"github.com/gorilla/handlers"

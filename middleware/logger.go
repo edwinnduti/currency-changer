@@ -1,8 +1,7 @@
 package middleware
 
 // libraries
-import(
-
+import (
 	"log"
 	"net/http"
 )
